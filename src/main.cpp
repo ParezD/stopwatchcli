@@ -3,8 +3,9 @@
 #include <chrono>
 #include <thread>
 
-#define WIDTH 8     // default = 4
-#define HEIGHT 4    // default = 2
+#define WIDTH 8         // default = 4
+#define HEIGHT 4        // default = 2
+#define SPACE_WIDTH 6   // default = 2
 
 using namespace std;
 using namespace std::this_thread;
@@ -17,7 +18,7 @@ int main(int argc, char* argv[]){
 long sec = 0;
 
 for(;;){
-  //print_time((sec/60)/10, (sec/60)%10, (sec%60)/10, sec%10, WIDTH, HEIGHT);
+  //print_time((sec/60)/10, (sec/60)%10, (sec%60)/10, sec%10, WIDTH, HEIGHT, SPACE_WIDTH);
   print_time((sec/60)/10, (sec/60)%10, (sec%60)/10, sec%10);
   ++sec;
   sleep_for(1s);
