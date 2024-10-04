@@ -9,7 +9,7 @@ Install dependencies:
 
 # Install
 ```bash
-git clone git@github.com:ParezD/stopwatchcli.git
+git clone https://github.com/ParezD/stopwatchcli.git
 cd stopwatchcli
 makepkg -si
 
