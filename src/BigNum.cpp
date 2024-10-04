@@ -6,10 +6,10 @@
 char zn = '@';
 char sp = 0x20; //space
 
-uint8_t num_width = 3;   // number is 3 "pixels" wide"
-uint8_t num_height = 5;  // number is 5 "pixels" tall
+const uint8_t num_width = 3;   // number is 3 "pixels" wide"
+const uint8_t num_height = 5;  // number is 5 "pixels" tall
 
-char digits[11][5][3] = {
+char digits[printable_numbers][num_height][num_width] = {
 {{zn,zn,zn},{zn,sp,zn},{zn,sp,zn},{zn,sp,zn},{zn,zn,zn}}, // 0
 {{sp,sp,zn},{sp,sp,zn},{sp,sp,zn},{sp,sp,zn},{sp,sp,zn}}, // 1
 {{zn,zn,zn},{sp,sp,zn},{zn,zn,zn},{zn,sp,sp},{zn,zn,zn}}, // 2

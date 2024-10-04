@@ -11,12 +11,12 @@ void print_time(int min10, int min1, int sec10, int sec1, uint8_t p_width = 4, u
 extern char zn;
 extern char sp;
 
-extern uint8_t num_width;
-extern uint8_t num_height;
+extern const uint8_t num_width;
+extern const uint8_t num_height;
 
 extern char digits[11][5][3];
 
-enum numbers{ // pretty much useless now \(-_-)/
+enum numbers{
   zero,
   one,
   two,
@@ -27,7 +27,9 @@ enum numbers{ // pretty much useless now \(-_-)/
   seven,
   eight,
   nine,
-  ddot
+  ddot,
+
+  printable_numbers
 };
 
 #endif

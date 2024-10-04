@@ -12,6 +12,11 @@ using namespace std::this_thread;
 using namespace std::literals;
 
 int main(int argc, char* argv[]){
+  string version = "1.0.6";
+  if(argc > 1 && string(argv[1]) == "--version"){
+    cout << "StopwatchCLI version: " << version << endl;
+    return EXIT_SUCCESS;
+  }
 
 //print_time(6, 9, 6, 9, width, height);
 
