@@ -31,8 +31,7 @@ void print_x_n_times(char x, uint8_t n){
 }
 
 void space(uint8_t n){
-  for(int i = 0; i < n; ++i)
-    std::cout << sp;
+  print_x_n_times(sp, n);
 }
 
 void pdigit(int num, int layer, uint8_t p_width, uint8_t p_height){
