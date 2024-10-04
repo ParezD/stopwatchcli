@@ -25,7 +25,7 @@ validpgpkeys=()
 
 package() {
   mkdir -p "${pkdir}/usr/bin"
-  cp "${srcdir}/${pkgname}" "${pkgdir}/usr/bin/welcome"
-  chmod +x "${pkgdir}/usr/bin/stopwatchcli"
+  cp "${srcdir}/${pkgname}" "${pkgdir}/usr/bin/${pkgname}"
+  chmod +x "${pkgdir}/usr/bin/${pkgname}"
 }
 
