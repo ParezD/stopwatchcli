@@ -4,7 +4,7 @@ pkgrel=1
 pkgdescs="it is a simple cli stopwatch"
 arch=("x86_64")
 license=("MIT")
-source=("$pkgname-1")
+source=("$pkgname")
 sha256sums=("SKIP")
 
 package() {
