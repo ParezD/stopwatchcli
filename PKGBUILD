@@ -7,10 +7,14 @@ license=("MIT")
 source=("$pkgname")
 sha256sums=("SKIP")
 
-package() {
+
+build() {
   cd ".."
   cmake .
   make
+}
+
+package() {
   mkdir -p "${pkgdir}/usr/bin"
   cp "${srcdir}/stopwatchcli" "${pkgdir}/usr/bin/stopwatchcli"
   chmod +x "${pkgdir}/usr/bin/stopwatchcli"
